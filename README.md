@@ -11,6 +11,12 @@ switch (trys_count)
     case 1:
         Console.WriteLine("Введите ваше предположение:");
         guess = Convert.ToInt32(Console.ReadLine());
+        while (guess < 1 || guess > 100)
+        {
+            Console.Clear();
+            Console.WriteLine("Некорректный ввод. Введите число от 1 до 100:");
+            guess = Convert.ToInt32(Console.ReadLine());
+        }
         Console.Clear();
         if (guess != rndInt)
         {
@@ -28,42 +34,12 @@ switch (trys_count)
     case 2:
         Console.WriteLine("Введите ваше предположение:");
         guess = Convert.ToInt32(Console.ReadLine());
-        Console.Clear();
-        if (guess != rndInt)
+        while (guess < 1 || guess > 100)
         {
-            trys_count--;
-            Console.WriteLine($"Не правильно. Осталось попыток: {trys_count}");
-            Console.WriteLine("-----------------------------------");
-            goto case 1;
-        }Random rnd = new Random();
-int rndInt = rnd.Next(1, 101);
-int trys_count = 5;
-int guess = 0;
-
-Console.WriteLine("Угадайте число от 1 до 100");
-//Console.WriteLine(rndInt);
-switch (trys_count)
-{
-    case 1:
-        Console.WriteLine("Введите ваше предположение:");
-        guess = Convert.ToInt32(Console.ReadLine());
-        Console.Clear();
-        if (guess != rndInt)
-        {
-            goto default;
+            Console.Clear();
+            Console.WriteLine("Некорректный ввод. Введите число от 1 до 100:");
+            guess = Convert.ToInt32(Console.ReadLine());
         }
-        else if (guess == rndInt)
-        {
-            Console.WriteLine("Правильно :)");
-            break;
-        }
-        else
-        {
-            goto default;
-        }
-    case 2:
-        Console.WriteLine("Введите ваше предположение:");
-        guess = Convert.ToInt32(Console.ReadLine());
         Console.Clear();
         if (guess != rndInt)
         {
@@ -84,6 +60,12 @@ switch (trys_count)
     case 3:
         Console.WriteLine("Введите ваше предположение:");
         guess = Convert.ToInt32(Console.ReadLine());
+        while (guess < 1 || guess > 100)
+        {
+            Console.Clear();
+            Console.WriteLine("Некорректный ввод. Введите число от 1 до 100:");
+            guess = Convert.ToInt32(Console.ReadLine());
+        }
         Console.Clear();
         if (guess != rndInt)
         {
@@ -104,6 +86,12 @@ switch (trys_count)
     case 4:
         Console.WriteLine("Введите ваше предположение:");
         guess = Convert.ToInt32(Console.ReadLine());
+        while (guess < 1 || guess > 100)
+        {
+            Console.Clear();
+            Console.WriteLine("Некорректный ввод. Введите число от 1 до 100:");
+            guess = Convert.ToInt32(Console.ReadLine());
+        }
         Console.Clear();
         if (guess != rndInt)
         {
@@ -124,6 +112,12 @@ switch (trys_count)
     case 5:
         Console.WriteLine("Введите ваше предположение:");
         guess = Convert.ToInt32(Console.ReadLine());
+        while(guess < 1 || guess > 100)
+        {
+            Console.Clear();
+            Console.WriteLine("Некорректный ввод. Введите число от 1 до 100:");
+            guess = Convert.ToInt32(Console.ReadLine());
+        }
         Console.Clear();
         if (guess != rndInt)
         {
@@ -145,3 +139,4 @@ switch (trys_count)
         Console.WriteLine($"У тебя закончились попытки :( \nОтвет был: {rndInt}");
         break;
 }
+```
