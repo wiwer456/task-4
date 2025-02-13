@@ -1,4 +1,4 @@
-﻿Random rnd = new Random();
+Random rnd = new Random();
 int rndInt = rnd.Next(1, 101);
 int trys_count = 5;
 int guess = 0;
@@ -31,7 +31,7 @@ switch (trys_count)
         if (guess != rndInt)
         {
             trys_count--;
-            Console.WriteLine($"Не правильно. Осталось попыток: {trys_count}");
+            Console.WriteLine($"Неправильно. Осталось попыток: {trys_count}");
             Console.WriteLine("-----------------------------------");
             goto case 1;
         }
@@ -51,7 +51,7 @@ switch (trys_count)
         if (guess != rndInt)
         {
             trys_count--;
-            Console.WriteLine($"Не правильно. Осталось попыток: {trys_count}");
+            Console.WriteLine($"Неправильно. Осталось попыток: {trys_count}");
             Console.WriteLine("-----------------------------------");
             goto case 2;
         }
@@ -71,7 +71,7 @@ switch (trys_count)
         if (guess != rndInt)
         {
             trys_count--;
-            Console.WriteLine($"Не правильно. Осталось попыток: {trys_count}");
+            Console.WriteLine($"Неправильно. Осталось попыток: {trys_count}");
             Console.WriteLine("-----------------------------------");
             goto case 3;
         }
@@ -91,7 +91,7 @@ switch (trys_count)
         if (guess != rndInt)
         {
             trys_count--;
-            Console.WriteLine($"Не правильно. Осталось попыток: {trys_count}");
+            Console.WriteLine($"Неправильно. Осталось попыток: {trys_count}");
             Console.WriteLine("-----------------------------------");
             goto case 4;
         }
